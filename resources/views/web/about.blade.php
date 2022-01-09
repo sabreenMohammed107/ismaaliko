@@ -93,8 +93,7 @@
         </div>
     </section>
 
-    <section class="pt-5 pb-5"
-        style="background-image: url('{{ asset('webssets/images/bg4.png') }}');background-repeat: no-repeat;background-position: right;background-color:#F9F9F9">
+    <section class="pt-5 pb-5 client-background">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
