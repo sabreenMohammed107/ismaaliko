@@ -10634,7 +10634,7 @@ img {
 }
 
 .client-background{
-  background-image: url(../images/bg5.png) ;
+  background-image: url('../images/bg5.png') !important;
   background-repeat: no-repeat;background-color:#F9F9F9;
 }
 /*/////////////////////////////////////////*/
