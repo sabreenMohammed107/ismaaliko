@@ -1,0 +1,240 @@
+﻿
+/*********************************
+3. Home
+*********************************/
+
+.home
+{
+	width: 100%;
+	height: 80vh;
+	background: #212121;
+}
+
+
+/*********************************
+3.1 Home Slider
+*********************************/
+
+.home_slider_container
+{
+	width: 100%;
+	height: 100%;
+}
+.home_slider
+{
+	width: 100%;
+	height: 100%;
+}
+.slider_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.slider_background {
+  background-color: rgba(0,128,128,.5);
+}
+.slider_background:before {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: inherit;
+  content: ' ';
+}
+.home_slider .owl-dots
+{
+	position: absolute;
+	bottom: 29px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+.home_slider .owl-dots .owl-dot span
+{
+	width: 8px;
+	height: 8px;
+	background: #fff;
+	margin-top: 5px;
+    margin-right: 6px;
+    margin-bottom: 5px;
+    margin-left: 6px;
+}
+.home_slider .owl-dots .owl-dot.active span
+{
+	background: #fff;
+	width:20px;
+}
+.home_slider_content
+{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width:100%;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.home_slider_content h1
+{
+	font-family: 'gill', sans-serif;
+	font-size: 52px;
+	line-height: 1.1;
+	color: #FFFFFF;
+}
+.home_slider_text
+{
+	width: 100%;
+	/*margin: 0 auto;*/
+	margin-top: 15px;
+	font-family: 'gill', sans-serif;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align:right;
+}
+.button1
+{
+	background: white;
+	text-align: center;
+	padding:7px 40px;
+	border-radius:.3rem;
+	border:solid white 2px;
+	color:teal;
+	cursor:pointer;
+	position: relative;
+	z-index: 1;
+}
+.button1::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 50%;
+	height: 100%;
+	background: teal;
+	content: '';
+	opacity: 0;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+	z-index: -1;
+}
+.button1:hover::after
+{
+	width: 100%;
+	opacity: 1;
+}
+.button1:hover 
+{
+	color: white;
+	border:solid teal 2px;
+}
+
+.button2
+{
+	background: teal;
+	text-align: center;
+	padding:7px 40px;
+	border-radius:.3rem;
+	border:solid white 2px;
+	color:white;
+	cursor:pointer;
+	position: relative;
+	z-index: 1;
+}
+.button2::after
+{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 50%;
+	height: 100%;
+	background: #FFFFFF;
+	content: '';
+	opacity: 0;
+	-webkit-transition: all 300ms ease;
+	-moz-transition: all 300ms ease;
+	-o-transition: all 300ms ease;
+	transition: all 300ms ease;
+	z-index: -1;
+}
+.button2:hover::after
+{
+	width: 100%;
+	opacity: 1;
+}
+.button2:hover 
+{
+	color: teal;
+	border:solid white 2px;
+}
+.home_slider_button
+{
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.home_slider_nav
+{
+	position: absolute;
+	/*top: 56.32%;*/
+	width: 60px;
+	height: 60px;
+	/*border-radius: 50%;*/
+	/*background: #939393;*/
+	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+	z-index: 10;
+
+	bottom:0 !important;
+	background:teal;
+}
+.home_slider_prev
+{
+	/*left: 177px;*/
+	right:60px !important;
+}
+.home_slider_next
+{
+	/*right: 177px;*/
+	right:0 !important;
+}
+div
+{
+	display: block;
+	position: relative;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.home_slider_nav:hover
+{
+	background: #ffa800;
+}

@@ -1,0 +1,94 @@
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+   margin-bottom:1rem;
+}
+
+.navbar .dropdown-menu {
+  border:none;
+  background-color:rgba(255,255,255,.99) !important;
+  margin-top:15px;
+}
+
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+  
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+.navbar .nav-item {
+  padding:.5rem .5rem;
+  margin:0 .25rem;
+}
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.navbar .dropdown-menu {
+  width:100%;
+  left:0;
+  right:0;
+/*  height of nav-item  */
+  top:45px;
+  
+  display:block;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+  
+}
+  
+ 
+
+  
+  /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+  display:block;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+  
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+  }
+
+}
+.form-inline .form-control{
+	height:40px !important;
+}
+.navbar-nav .nav-item .nav-link{
+	color:#009EE3;
+	font-size:17px;
+	font: normal normal bold 17px/32px Cairo;
+}
+.navbar-nav .nav-item a:hover{
+	color:#01608A !important;
+}
+.navbar-toggler-icon i{
+	color:#01608A !important;
+}
+.dropdown-menu ul{
+	padding-right:0px !important;
+}
+.dropdown-menu ul li{
+	padding-right:0px !important;
+	margin-right:0px !important;
+}
+.dropdown-menu ul li a{
+	padding-right:0px !important;
+}
+.dropdown-menu .nav-item{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+}
+.dropdown-menu .nav-item a{
+	padding-top:0px !important;
+	padding-bottom:0px !important;
+	color:#999999 !important;
+	font: normal normal bold 17px/32px Cairo;
+}
