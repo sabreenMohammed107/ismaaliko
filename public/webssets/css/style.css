@@ -10633,4 +10633,52 @@ img {
   height:90px;
 }
 
+.client-background{
+  background-image: url(../images/bg5.png) ;
+  background-repeat: no-repeat;background-color:#F9F9F9;
+}
 /*/////////////////////////////////////////*/
+.show{
+display:none;
+}
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width:320px)  and (max-width:600px){ 
+.hide{
+  display:none !important;
+}
+.show{
+  display:block;
+}
+.slider-section h1{
+  font-size:22px;
+}
+.slider-section p{
+  font-size:18px;
+}
+.glry-header{
+  padding-bottom:25px;
+  margin-bottom:30px;
+}
+.artcl-header{
+  margin-bottom:40px;
+}
+.client-background{
+  background-image: url('../images/bg4.png') !important;
+}
+}
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:600px) {
+
+}
+/* smartphones, Android phones, landscape iPhone */
+@media (min-width:480px)  {
+
+}
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:801px)  { 
+
+}
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) { 
+
+}
