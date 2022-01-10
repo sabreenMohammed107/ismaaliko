@@ -144,7 +144,7 @@
     <section class="ftco-section testimony-section bg-dark2 services">
         <div class="container">
             <div class="row sec-head">
-                <h3 class="text-white">معرض الصور</h3>
+                <h3 class="text-white glry-header">معرض الصور</h3>
             </div>
             <div class="row">
                 <div class="filter-list" style="direction:rtl">
@@ -192,7 +192,7 @@
     <section class="ftco-section services">
         <div class="container">
             <div class="row sec-head">
-                <h3 class="clr-dark">المقالات</h3>
+                <h3 class="clr-dark  artcl-header">المقالات</h3>
             </div>
             <div class="row mb-3 pl-2">
                 <div class="filter-list" style="direction:rtl">

@@ -4,7 +4,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-:root {
+ :root {
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -3781,8 +3781,9 @@ input[type="button"].btn-block {
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
       color: #fff; }
 	.accordion-title{
-		font-size:25px !important;
+		font-size:1.25rem !important;
 		color:#01608A !important;
+		font-weight:bold;
 	}
 .card {
   position: relative;
@@ -9154,7 +9155,9 @@ textarea.form-control {
     .ftco-footer .ftco-footer-widget ul li a span {
       color: #fff; }
 	    .ftco-footer .ftco-footer-widget ul li a span:hover {
-      color: #014B6C; }
+      color: #009ee3;
+
+	    }
     .ftco-footer .ftco-footer-widget .btn-primary {
       background: #fff !important;
       border: 2px solid #fff !important; }
@@ -10191,7 +10194,7 @@ textarea.form-control {
 	height:120px;
 	width:120px !important;
 	border-radius:50%;
-	margin-top:-60px;
+	margin-top:-60px !important;
 }
 .client-item{
 	margin-top:70px;
@@ -10632,53 +10635,52 @@ img {
   width:100px;
   height:90px;
 }
-
 .client-background{
-  background-image: url('../images/bg5.png');
-	background-repeat: no-repeat;background-color:#F9F9F9;
-}
+		background-image: url('../images/bg5.png');
+		background-repeat: no-repeat;background-color:#F9F9F9;
+	}
 /*/////////////////////////////////////////*/
 .show{
-display:none;
+	display:none;
 }
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 @media (min-width:320px)  and (max-width:600px){ 
-.hide{
-  display:none !important;
-}
-.show{
-  display:block;
-}
-.slider-section h1{
-  font-size:22px;
-}
-.slider-section p{
-  font-size:18px;
-}
-.glry-header{
-  padding-bottom:25px;
-  margin-bottom:30px;
-}
-.artcl-header{
-  margin-bottom:40px;
-}
-.client-background{
-  background-image: url('../images/bg4.png') !important;
-}
+	.hide{
+		display:none !important;
+	}
+	.show{
+		display:block;
+	}
+	.slider-section h1{
+		font-size:22px;
+	}
+	.slider-section p{
+		font-size:18px;
+	}
+	.glry-header{
+		padding-bottom:25px;
+		margin-bottom:30px;
+	}
+	.artcl-header{
+		margin-bottom:40px;
+	}
+	.client-background{
+		background-image: url('../images/bg4.png') !important;
+	}
 }
 /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
 @media (min-width:600px) {
-
+	
 }
-/* smartphones, Android phones, landscape iPhone */
+ /* smartphones, Android phones, landscape iPhone */
 @media (min-width:480px)  {
-
+	
 }
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:801px)  { 
-
+	
 }
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) { 
-
+	
 }
