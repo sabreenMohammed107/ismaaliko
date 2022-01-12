@@ -1,7 +1,7 @@
 @extends('web.layout.web')
 
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_2.png');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('webssets/images/bg_2.png')}}');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" dir="rtl">

@@ -45,14 +45,14 @@
                     <div class="col-lg-6 d-block text-right">
                         <div class="row d-flex">
                             <div class="col-md d-flex topper align-items-center align-items-stretch">
-                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-location.png')}}"  alt="address"/></span></div>
+                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-location.png')}}"  alt="address" class="hide"  /></span></div>
                                 <div class="text hide">
                                     <span>العنوان</span>
                                     <span>{!! $contact->address !!}</span>
                                 </div>
                             </div>
                             <div class="col-md d-flex topper align-items-center align-items-stretch">
-                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-phone.png')}}" alt="phone" /></span></div>
+                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-phone.png')}}" alt="phone" class="hide"  /></span></div>
                                 <div class="text hide">
                                     <span>التليفون</span>
                                     <span>{!! $contact->phone!!}</span>

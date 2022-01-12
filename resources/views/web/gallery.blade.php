@@ -56,7 +56,7 @@
             </a>
             @else
                 <a class="play-btn" href="{{ $row->image }}">
-                    <div class="img img-video d-flex align-items-center " style="background-image: url(images/g5.png);height: 350px !important;">
+                    <div class="img img-video d-flex align-items-center " style="height: 350px !important;">
 
                         <iframe src="{{ $row->image }}" style=" width: 100%;
                             height: 100%;
