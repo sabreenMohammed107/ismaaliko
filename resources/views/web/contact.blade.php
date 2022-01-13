@@ -104,13 +104,13 @@
             <div class="card mb-5">
                 @foreach ($faq as $key=>$row)
                 <div class="box-shadow">
-                    <div class="card-header {{ $key == 0 ? 'active' : '' }}" data-toggle="collapse" href="#collapseOne" aria-expanded="true">
+                    <div class="card-header {{ $key == 0 ? 'active' : '' }}" data-toggle="collapse" href="#collapseOne{{$key}}" aria-expanded="true">
                         <a class="card-title accordion-title" dir="rtl">
                             <span class="icon-paperclip"></span>
                             {{$row->question}}
                         </a>
                     </div>
-                    <div id="collapseOne" class="card-body collapse show" data-parent="#accordion">
+                    <div id="collapseOne{{$key}}" class="card-body collapse show" data-parent="#accordion">
                         <p class="clr-gray">
                             {!! $row->answer !!}
                         </p>
