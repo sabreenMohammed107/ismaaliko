@@ -32,7 +32,7 @@
                 <div class="row no-gutters d-flex align-items-center align-items-stretch pt-3" dir="rtl">
                     <div class="col-md-6 d-flex align-items-center">
                         <a class="navbar-brand" href="{{ LaravelLocalization::localizeUrl('/') }}"><img src="{{ asset('webssets/images/logo.png')}}" alt="logo" /></a>
-                      <div class="text-right pr-5 show">
+                      <div class="text-right pr-5 shown">
                           <div class="col-md d-flex topper">
                               <div class="icon d-flex justify-content-end align-items-end"><span><img src="{{ asset('webssets/images/icon-phone.png')}}" alt="phone" /></span></div>
                               <div class="text">

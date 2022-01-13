@@ -10640,7 +10640,7 @@ img {
 		background-repeat: no-repeat;background-color:#F9F9F9;
 	}
 /*/////////////////////////////////////////*/
-.show{
+.shown{
 	display:none;
 }
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
@@ -10648,7 +10648,7 @@ img {
 	.hide{
 		display:none !important;
 	}
-	.show{
+	.shown{
 		display:block;
 	}
 	.slider-section h1{
