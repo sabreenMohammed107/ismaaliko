@@ -13,7 +13,7 @@
   <script src="{{ asset('webssets/js/google-map.js')}}"></script>
   <script src="{{ asset('webssets/js/main.js')}}"></script>
 
-
+ 
   	<script src="{{ asset('webssets/js/jquery-3.2.1.min.js')}}"></script>
   	<script src="{{ asset('webssets/js/bootstrap.min.js')}}"></script>
   	<script src="{{ asset('webssets/js/owl.carousel.js')}}"></script>
@@ -44,6 +44,7 @@
 
 		});
 	</script>
+	<script src="{{ asset('webssets/js/slick.js')}}"></script>
   	<script src="{{ asset('webssets/js/main-menu.js')}}"></script>
 
       @yield('scripts')

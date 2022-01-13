@@ -200,7 +200,7 @@
 
 @endsection
 @section('scripts')
-<script src="{{ asset('webssets/js/main-menu.js')}}"></script>
+{{-- <script src="{{ asset('webssets/js/main-menu.js')}}"></script> --}}
 
 <script>
     $('.carousel-main1').owlCarousel({
@@ -216,9 +216,9 @@
 </script>
 
 
-<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+{{-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> --}}
+{{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script> --}}
+{{-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> --}}
 <script>
   $(document).ready(function () {
       $('.customer-logos').slick({

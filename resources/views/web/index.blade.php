@@ -17,7 +17,7 @@
                         style="background-image: url({{ asset('uploads/home_sliders') }}/{{ $slide->image }});">
                         <div class="overlay"></div>
                         <div class="container" dir="rtl">
-                            <div class="row pr-5 pt-5 slider-text align-items-center justify-content-start"
+                            <div class="row  pt-5 slider-text align-items-center justify-content-start"
                                 data-scrollax-parent="true" dir="rtl">
                                 <div class="col-md-6 ftco-animate">
                                     <h1 class="mb-4 text-right text-white">

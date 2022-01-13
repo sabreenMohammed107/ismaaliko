@@ -56,7 +56,7 @@
                     <div class="block-21 mb-4 d-flex pl-2 box-shadow">
                         <a class="blog-img" href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $latest->id . '/' . $latest->slug) }}" style="background-image: url('{{ asset('uploads/blogs') }}/{{ $latest->image }}');"></a>
                         <div class="text">
-                            <h3 class="heading pt-3"><a href="#" class="clr-dark">{{ $latest->title }}</a></h3>
+                            <h3 class="heading pt-3 pr-3 text-right"><a href="#" class="clr-dark">{{ $latest->title }}</a></h3>
                             <div class="meta text-right mr-3">
                                 <p class="clr-gray">
                                     {{ Illuminate\Support\Str::words(strip_tags($latest->text ?? ''), 10) }}
