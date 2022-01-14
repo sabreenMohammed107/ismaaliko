@@ -21,7 +21,7 @@
                     <div class="col-lg-12 ftco-animate">
                         <div class="text-right">
                             <p>
-                                <img src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt="" class="img-fluid h-400 w-100">
+                                <img src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt="{{ asset('uploads/blogs') }}/{{ $row->image }}" class="img-fluid h-400 w-100">
                             </p>
                             <h2 class="mb-3 clr-dark"><b>{{ $row->title }}</b></h2>
                             <p class="clr-gray">{!! $row->text !!}</p> </div>
@@ -53,38 +53,25 @@
                         </ul>
                     </nav>
                 </div>
-                {{-- <div class="row">
+                <div class="row">
                     <h3 class="text-right clr-dark pb-3">مقالات اخري</h3>
                     <div class="row" dir="rtl">
+                        @foreach ($others as $other)
                         <div class="col-md-6 col-lg-4 ftco-animate">
                             <div class="blog-entry box-shadow">
-                                <img src="images/blog-3.png" class="w-100" />
+                                <img src="{{ asset('uploads/blogs') }}/{{ $other->image }}" alt="{{ asset('uploads/blogs') }}/{{ $other->image }}" class="w-100" />
                                 <div class="text p-4">
-                                    <h3 class="heading text-right"><a href="#" class="clr-dark">لوريم إيبسوم</a></h3>
-                                    <p class="text-right">لوريم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل</p>
+                                    <h3 class="heading text-right"><a href="#" class="clr-dark">{{ $other->title }}</a></h3>
+                                    <p class="text-right">{{Illuminate\Support\Str::limit(strip_tags($other->text ?? ''), $limit = 100, $end = '')}}</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4 ftco-animate">
-                            <div class="blog-entry box-shadow">
-                                <img src="images/blog-2.png" class="w-100" />
-                                <div class="text p-4">
-                                    <h3 class="heading text-right"><a href="#" class="clr-dark">لوريم إيبسوم</a></h3>
-                                    <p class="text-right">لوريم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4 ftco-animate">
-                            <div class="blog-entry box-shadow">
-                                <img src="images/blog-1.png" class="w-100" />
-                                <div class="text p-4">
-                                    <h3 class="heading text-right"><a href="#" class="clr-dark">لوريم إيبسوم</a></h3>
-                                    <p class="text-right">لوريم هو ببساطة نص شكلي بمعنى أن الغاية هي الشكل</p>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+
+
+
                     </div>
-                </div> --}}
+                </div>
             </div>
             <!-- .col-md-8 -->
             <div class="col-lg-4 sidebar ftco-animate">
