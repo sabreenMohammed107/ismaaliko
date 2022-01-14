@@ -44,6 +44,9 @@
             {{-- <span class="label label-primary pull-right">4</span> --}}
           </a>
           <ul class="treeview-menu">
+            <li><a href="{{ route('users.index') }}"><i class="fa fa-circle-o"></i> المستخدمين </a></li>
+            <li><a href="{{ route('roles.index') }}"><i class="fa fa-circle-o"></i> الأدوار </a></li> --}}
+
             {{-- <li><a href="{{ route('users.index') }}"><i class="fa fa-circle-o"></i> المستخدمين </a></li>
             <li><a href="{{ route('roles.index') }}"><i class="fa fa-circle-o"></i> الأدوار </a></li> --}}
             {{-- <li><a href="fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
@@ -60,10 +63,13 @@
         <li class="treeview">
           <a href="#">
             <i class="fa fa-laptop"></i>
-            <span>بيانات اساسية</span>
+            <span>المقالات</span>
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
+            <li><a href="{{ route('admin-blogs.index') }}"><i class="fa fa-circle-o"></i> عرض المقالات </a></li> --}}
+            <li><a href="{{ route('admin-blogs.create') }}"><i class="fa fa-circle-o"></i> انشاء مقالة </a></li>
+
             {{-- <li><a href="{{ route('size.index') }}"><i class="fa fa-circle-o"></i> المقاسات </a></li>
             <li><a href="{{ route('color.index') }}"><i class="fa fa-circle-o"></i> الالوان </a></li>
             <li><a href="{{ route('articles.index') }}"><i class="fa fa-circle-o"></i> المقالات </a></li> --}}
@@ -75,10 +81,14 @@
         <li class="treeview">
             <a href="">
               <i class="fa fa-edit"></i>
-              <span>التصنيفات</span>
+              <span>معرض الصور</span>
               <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
+                <li>
+                    <a href="{{ route('admin-gallery-category.index') }}"><i class="fa fa-circle-o text-red"></i> <span> تصنيفات معرض الصور</span></a>
+                    <li><a href="{{ route('admin-gallery.index') }}"><i class="fa fa-circle-o"></i> معرض الصور</a></li>
+
                 {{-- <li>
                     <a href="{{ route('category.index') }}"><i class="fa fa-circle-o text-red"></i> <span>عرض التصنيفات</span></a>
                 </li>
@@ -93,6 +103,15 @@
               <i class="fa fa-angle-left pull-right"></i>
             </a>
             <ul class="treeview-menu">
+                <li>
+                    <a href="{{ route('admin-product-category.index') }}"><i class="fa fa-circle-o text-red"></i> <span>تصنيفات المنتجات</span></a>
+                </li>
+                <li>
+                    <a href="{{ route('admin-accessories.index') }}"><i class="fa fa-circle-o text-red"></i> <span> اكسسوار</span></a>
+                </li>
+                <li>
+                    <a href="{{ route('admin-glasses.index') }}"><i class="fa fa-circle-o text-red"></i> <span> زجاج</span></a>
+                </li>
                 {{-- <li>
                     <a href="{{ route('product.index') }}"><i class="fa fa-circle-o text-red"></i> <span>عرض المنتجات</span></a>
                 </li>
@@ -101,20 +120,6 @@
             </ul>
           </li>
 
-          <li class="treeview">
-            <a href="">
-              <i class="fa fa-edit"></i>
-              <span>الكوبونات</span>
-              <i class="fa fa-angle-left pull-right"></i>
-            </a>
-            <ul class="treeview-menu">
-                {{-- <li>
-                    <a href="{{ route('promo.index') }}"><i class="fa fa-circle-o text-red"></i> <span>عرض الكوبونات</span></a>
-                </li>
-                  <li><a href="{{ route('promo.create') }}"><i class="fa fa-circle-o"></i> اضافه كوبون</a></li> --}}
-
-            </ul>
-          </li>
 
         <li class="treeview">
           <a href="">
@@ -123,8 +128,10 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            {{-- <li><a href="{{ route('clients.index') }}"><i class="fa fa-circle-o"></i> سجل العملاء</a></li>
-            <li><a href="{{ route('admin-cart.index') }}"><i class="fa fa-circle-o"></i> الكارت</a></li>
+            <li><a href="{{ route('admin-client.index') }}"><i class="fa fa-circle-o"></i> سجل العملاء</a></li>
+            <li><a href="{{ route('admin-team.index') }}"><i class="fa fa-circle-o"></i> فريق العمل</a></li>
+            {{--
+
             <li><a href="{{ route('admin-order.index') }}"><i class="fa fa-circle-o"></i> الاوردر</a></li>
             <li><a href="sliders.html"><i class="fa fa-circle-o"></i> المفضلة</a></li> --}}
 
@@ -139,11 +146,15 @@
           </a>
           <ul class="treeview-menu">
             {{-- <li><a href="{{ route('admin-slider.index') }}"><i class="fa fa-circle-o"></i>  الصور الرئيسيه </a></li>
+
+            --}}
+            <li><a href="{{ route('admin-slider.index') }}"><i class="fa fa-circle-o"></i>صور الصفحة الرئيسيه</a></li>
+
+            <li><a href="{{ route('admin-company-contact.index') }}"><i class="fa fa-circle-o"></i> التواصل</a></li>
             <li><a href="{{ route('admin-company.index') }}"><i class="fa fa-circle-o"></i> عن الشركه </a></li>
             <li><a href="{{ route('whyus.index') }}"><i class="fa fa-circle-o"></i> نحن لماذا</a></li>
-              <li><a href="{{ route('admin-company-contact.index') }}"><i class="fa fa-circle-o"></i> التواصل</a></li> --}}
 
-          </ul>
+        </ul>
         </li>
 
         <li class="treeview">
@@ -152,6 +163,8 @@
             <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
+            <li><a href="{{ route('admin-feedback.index') }}"><i class="fa fa-circle-o"></i> اراء العملاء </a></li>
+
             {{-- <li><a href="{{ route('getNewsLetters') }}"><i class="fa fa-circle-o"></i> الاشتركات </a></li>
             <li><a href="{{ route('admin-contact-form') }}"><i class="fa fa-circle-o"></i> تواصل معنا </a></li>
           --}}</ul>

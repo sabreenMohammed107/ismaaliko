@@ -104,27 +104,35 @@
             <div class="card mb-5">
                 @foreach ($faq as $key=>$row)
                 <div class="box-shadow">
-                    <div class="card-header {{ $key == 0 ? 'active' : '' }}" data-toggle="collapse" href="#collapseOne{{$key}}" aria-expanded="true">
+                    <div class="card-header {{ $key==0 ? 'active' : '' }}" data-toggle="collapse" href="#collapseOne-{{$row->id}}" aria-expanded="true">
                         <a class="card-title accordion-title" dir="rtl">
                             <span class="icon-paperclip"></span>
                             {{$row->question}}
                         </a>
                     </div>
-                    <div id="collapseOne{{$key}}" class="card-body collapse show" data-parent="#accordion">
+                    <div id="collapseOne-{{$row->id}}" class="card-body collapse {{ $key==0 ? 'show' : 'collapse' }} " data-parent="#accordion">
                         <p class="clr-gray">
                             {!! $row->answer !!}
                         </p>
                     </div>
                 </div>
+                <div class="sprt"></div>
                 @endforeach
 
+
+            </div>
+        </div>
+    </div>
+</section>
+
+                </div>
                 <div class="sprt"></div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="text-right bg-light">
+{{-- <section class="text-right bg-light">
     <div class="container">
         <h2 class="clr-dark mb-4">الأسئلة الشائعة والتعليقات Newwwwwwwww</h2>
         <p class="clr-gray mb-4">
@@ -179,7 +187,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <section>
     <div class="row justify-content-center pb-2 pt-5">

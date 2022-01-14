@@ -34,9 +34,9 @@
                                 <td></td>
 
 							<td>{{ $index +1 }}</td>
-                            <td>{{$row->phone}}</td>
+                            <td>{!! $row->phone !!}</td>
                             <td>{{$row->email}} </td>
-                            <td>{{$row->address}}</td>
+                            <td>{!! $row->address !!}</td>
 
                                       <td>
                                         <div class="btn-group">

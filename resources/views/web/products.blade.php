@@ -21,13 +21,26 @@
                     <div class="col-lg-12 ftco-animate mb-4 bg-light p-3">
                         <div class="row">
                             <div class="col-lg-5">
-                                <div class="img img-video d-flex align-items-center h-200" style="background-image: url({{ asset('uploads/products_categories') }}/{{ $category->image }});">
+                                {{-- <div class="img img-video d-flex align-items-center h-200" style="background-image: url({{ asset('uploads/products_categories') }}/{{ $category->image }});">
                                     <div class="video justify-content-center">
                                         <a href="{{ asset('uploads/products_categories') }}/{{ $category->vedio }}" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                                             <span class="ion-ios-play"></span>
                                         </a>
                                     </div>
-                                </div>
+                                </div> --}}
+                                <a class="play-btn" href="{{ $category->vedio }}">
+                                    <div class="img img-video d-flex align-items-center " style="height: 280px !important;">
+
+                                        <iframe src="{{ $category->vedio }}" style=" width: 100%;
+                                            height: 100%;
+                                            position: absolute;
+                                            object-fit: cover;
+                                            z-index: 0;" frameborder="0"></iframe>
+                                        <div>
+                                            <i class="fa fa-play text-white fz-18"></i>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                             <div class="col-lg-7">
                                 <div class="p-3">

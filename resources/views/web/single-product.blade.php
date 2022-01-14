@@ -107,7 +107,24 @@
                     <div class="blog-entry">
                         <a href="blog-single.html" class="block-20 d-flex align-items-center box-shadow">
                             <div class="d-flex align-items-center justify-content-center w-100">
-                                <img src="{{ asset('uploads/why_us') }}/{{ $row->image }}" alt="{{ asset('uploads/why_us') }}/{{ $row->image }}" class="hw-100" />
+                                @isset($why_us[0])
+                               <img src="{{ asset('webssets/images/icon-1.png')}}" alt="icon-1.png" class="hw-100"/>
+
+                               @endisset
+                               @isset($why_us[1])
+                               <img src="{{ asset('webssets/images/icon-2.png')}}" alt="icon-5.png" class="hw-100"/>
+
+                               @endisset
+                               @isset($why_us[2])
+                               <img src="{{ asset('webssets/images/icon-5.png')}}" alt="icon-5.png" class="hw-100"/>
+
+                               @endisset
+                               @isset($why_us[3])
+                               <img src="{{ asset('webssets/images/icon-6.png')}}" alt="icon-6.png" class="hw-100"/>
+
+                               @endisset
+
+
                             </div>
                             <div class="meta-date text-center p-2">
                                 <span class="yr"></span>
@@ -140,7 +157,7 @@
                                             {{$row->question}}
                                         </a>
                                     </div>
-                                    <div id="collapseOne" class="card-body collapse show" data-parent="#accordion">
+                                    <div id="collapseOne" class="card-body collapse {{ $key==0 ? 'show' : 'collapse' }}" data-parent="#accordion">
                                         <p class="clr-gray">
                                             {!! $row->answer !!}
                                         </p>
