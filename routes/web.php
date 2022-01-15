@@ -24,6 +24,7 @@ Route::resource('roles', 'App\Http\Controllers\RoleController');
 Route::resource('users', 'App\Http\Controllers\UserController');
  //admin-company-contact
  Route::resource('admin-company-contact', 'App\Http\Controllers\CompanyContactController');
+ Route::get('admin-contact-form', 'App\Http\Controllers\CompanyController@contactForm')->name('admin-contact-form');
   //admin-company
   Route::resource('admin-company', 'App\Http\Controllers\CompanyController');
    //whyus
@@ -47,4 +48,10 @@ Route::resource('users', 'App\Http\Controllers\UserController');
     Route::resource('/admin-slider', 'App\Http\Controllers\HomeSliderController');
     //blogs
     Route::resource('/admin-blogs', 'App\Http\Controllers\BlogsController');
+    //product
+    Route::resource('admin-product', 'App\Http\Controllers\ProductController');
+     //features
+ Route::resource('features', 'App\Http\Controllers\FeaturesController');
+  //attachment
+  Route::resource('attachment', 'App\Http\Controllers\AttachmentController');
 

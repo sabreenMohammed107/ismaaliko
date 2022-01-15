@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Company;
+use App\Models\Message;
+
 class CompanyController extends Controller
 {
     protected $object;
@@ -108,5 +110,13 @@ class CompanyController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+
+    public function contactForm(){
+        $rows=Message::orderBy("created_at", "Desc")->get();
+
+
+        return view('admin.contactForm.index', compact('rows'));
     }
 }

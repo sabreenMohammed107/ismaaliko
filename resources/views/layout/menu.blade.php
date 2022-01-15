@@ -112,10 +112,11 @@
                 <li>
                     <a href="{{ route('admin-glasses.index') }}"><i class="fa fa-circle-o text-red"></i> <span> زجاج</span></a>
                 </li>
-                {{-- <li>
-                    <a href="{{ route('product.index') }}"><i class="fa fa-circle-o text-red"></i> <span>عرض المنتجات</span></a>
+
+                 <li>
+                    <a href="{{ route('admin-product.index') }}"><i class="fa fa-circle-o text-red"></i> <span>عرض المنتجات</span></a>
                 </li>
-                  <li><a href="{{ route('product.create') }}"><i class="fa fa-circle-o"></i> اضافه منتج</a></li> --}}
+                 {{-- <li><a href="{{ route('product.create') }}"><i class="fa fa-circle-o"></i> اضافه منتج</a></li> --}}
 
             </ul>
           </li>
@@ -165,9 +166,8 @@
           <ul class="treeview-menu">
             <li><a href="{{ route('admin-feedback.index') }}"><i class="fa fa-circle-o"></i> اراء العملاء </a></li>
 
-            {{-- <li><a href="{{ route('getNewsLetters') }}"><i class="fa fa-circle-o"></i> الاشتركات </a></li>
             <li><a href="{{ route('admin-contact-form') }}"><i class="fa fa-circle-o"></i> تواصل معنا </a></li>
-          --}}</ul>
+         </ul>
         </li>
 
         {{-- <li>
