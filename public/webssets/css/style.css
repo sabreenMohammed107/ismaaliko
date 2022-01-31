@@ -3718,7 +3718,10 @@ input[type="button"].btn-block {
     display: none; }
 
 .navbar-light .navbar-brand {
-  color: rgba(0, 0, 0, 0.9); }
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: -13px;
+  margin-bottom: 5px;
+ }
   .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
     color: rgba(0, 0, 0, 0.9); }
 
@@ -8453,7 +8456,7 @@ h1, h2, h3, h4, h5,
     right: 0;
     bottom: 0;
     content: '';
-    opacity: .88;
+    opacity: .70;
     background: #014B6C 0% 0% no-repeat padding-box;
 	background-position:top center;
   }
