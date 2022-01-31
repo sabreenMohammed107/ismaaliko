@@ -124,9 +124,8 @@
         </div>
     </div>
 </section>
-
-                </div>
-                <div class="sprt"></div>
+    </div>
+            <div class="sprt"></div>
             </div>
         </div>
     </div>
