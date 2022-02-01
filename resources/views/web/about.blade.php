@@ -34,7 +34,7 @@
         <div class="container">
             <div class="row d-flex pb-5" dir="rtl">
                 <div class="col-md-6">
-                    <div class="img"> <img src="{{ asset('webssets/images/view.png') }}" alt="mission" /> </div>
+                    <div class="img"> <img src="{{ asset('webssets/images/view.png') }}" alt="mission" class="about-img"  /> </div>
                 </div>
                 <div class="col-md-6 wrap-about ftco-animate">
                     <h2 class="mb-4 text-right clr-dark">مهمتنا</h2>
@@ -49,7 +49,7 @@
                         {!! $company->vision !!} </p>
                 </div>
                 <div class="col-md-6">
-                    <div class="img"> <img src="{{ asset('webssets/images/vision.png') }}" alt="vission" />
+                    <div class="img"> <img src="{{ asset('webssets/images/vision.png') }}" alt="vission" class="about-img"  />
                     </div>
                 </div>
             </div>
@@ -150,7 +150,7 @@
         </div>
     </section>
 
-    <section class="ftco-section bg-light">
+    {{-- <section class="ftco-section bg-light">
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
@@ -196,7 +196,7 @@
 
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="search-course-area bg-3 relative pt-50 pb-50">
         <div id="ourclients">
