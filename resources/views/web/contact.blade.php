@@ -36,7 +36,8 @@
                             <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-location.png')}}" /></span></div>
                             <div class="text">
                                 <span class="clr-blue">العنوان</span>
-                                <span class="clr-blue2">{!!$contact->address !!}</span>
+                                <span class="clr-blue2"><b>الفرع الرئيسي :</b> {!!$contact->address !!}</span>
+                                <span class="clr-blue2"><b>فرع التجمع :</b> {!!$contact->address !!}</span>
                                 <span></span>
                             </div>
                         </div>

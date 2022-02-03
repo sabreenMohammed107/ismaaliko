@@ -10691,6 +10691,6 @@ img {
 }
 
 .about-img{
-  max-height: 400px;
-  max-width: 500px;
+  height: 300px;
+  width: 500px;
 }
