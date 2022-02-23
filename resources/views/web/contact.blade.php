@@ -28,7 +28,7 @@
             </div>
         </div>
         <div class="row d-flex align-items-stretch no-gutters">
-            <div class="col-lg-6 d-block text-right  p-md-5" dir="rtl">
+            <div class="col-lg-6 col-md-12 d-block text-right  p-md-5" dir="rtl">
                 <div class="row d-flex">
                     <div class="col-lg-12 d-block text-right mb-3">
                         <h5 class="clr-dark mr-3 mb-4">يرجى الاتصال بنا في حال وجود شكاوي أو استفسارات</h5>
@@ -66,7 +66,7 @@
                 </div>
             </div>
 
-            <div class="col-md-6 p-4 p-md-5 order-md-last" dir="rtl">
+            <div class="col-lg-6 col-md-12 p-4 p-md-5 order-md-last" dir="rtl">
                 <form action="{{ LaravelLocalization::localizeUrl('/contact-message') }}" method="post">
                     @csrf
                     <input type="hidden" name="type_id" value="2">
@@ -190,31 +190,35 @@
 </section> --}}
 
 <section>
-    <div class="row justify-content-center pb-2 pt-5">
-        <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
-            <h2 class="mb-4 clr-dark">موقعنا</h2>
+    <div class="container mb-4">
+        <div class="row justify-content-center pb-2 pt-5">
+            <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
+                <h2 class="mb-4 clr-dark">موقعنا</h2>
+            </div>
         </div>
-    </div>
-    <div>
-        <div class="mapouter">
-            <div class="gmap_canvas">
-                <iframe width="100%" height="500" id="gmap_canvas" src="{{$contact->google_map }}" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br>
-                <style>
-                    .mapouter {
-                        position: relative;
-                        text-align: right;
-                        height: 500px;
-                        width: 100%;
-                    }
-                </style><a href="https://www.embedgooglemap.net">google maps iframe code</a>
-                <style>
-                    .gmap_canvas {
-                        overflow: hidden;
-                        background: none !important;
-                        height: 500px;
-                        width: 100%;
-                    }
-                </style>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="100%" height="500" id="gmap_canvas" src="{{$contact->google_map }}" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 100%;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">google maps iframe code</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 100%;
+                            }
+                        </style>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

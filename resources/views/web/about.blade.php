@@ -33,23 +33,23 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row d-flex pb-5" dir="rtl">
-                <div class="col-md-6">
-                    <div class="img"> <img src="{{ asset('webssets/images/view.png') }}" alt="mission" class="about-img"  /> </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" style="background-image: url('{{ asset('webssets/images/view.png') }}');height: 300px;background-repeat: no-repeat;background-size: cover;">
+                    {{-- <div class="img"> <img src="{{ asset('webssets/images/view.png') }}" alt="mission" class="about-img"  /> </div> --}}
                 </div>
-                <div class="col-md-6 wrap-about ftco-animate">
-                    <h2 class="mb-4 text-right clr-dark">مهمتنا</h2>
+                <div class="col-lg-6 col-md-6 col-sm-12 wrap-about ftco-animate">
+                    <h2 class="mb-4 mt-3 text-right clr-dark">مهمتنا</h2>
                     <p class="mb-4 text-right clr-gray">
                         {!! $company->mission !!} </p>
                 </div>
             </div>
             <div class="row d-flex mt-5" dir="rtl">
-                <div class="col-md-6 wrap-about ftco-animate">
-                    <h2 class="mb-4 text-right clr-dark">رؤيتنا</h2>
+                <div class="col-lg-6 col-md-6 col-sm-12 wrap-about ftco-animate">
+                    <h2 class="mb-4 mt-3 text-right clr-dark">رؤيتنا</h2>
                     <p class="mb-4 text-right clr-gray">
                         {!! $company->vision !!} </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="img"> <img src="{{ asset('webssets/images/vision.png') }}" alt="vission" class="about-img"  />
+                <div class="col-lg-6 col-md-6 col-sm-12" style="background-image: url('{{ asset('webssets/images/vision.png') }}');height: 300px;background-repeat: no-repeat;background-size: cover;">
+                    {{-- <div class="img"> <img src="{{ asset('webssets/images/vision.png') }}" alt="vission" class="about-img"  /> --}}
                     </div>
                 </div>
             </div>

@@ -35,7 +35,7 @@
                 @foreach ($galleries as $row)
 
                 <div
-                    class="col-sm-4 all {{ $row->cat->id ?? '' }} @if ($row->type == 1)
+                    class="col-lg-4 col-md-6 col-sm-12 all {{ $row->cat->id ?? '' }} @if ($row->type == 1)
                     cam
         @else
         vdo

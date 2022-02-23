@@ -10642,7 +10642,9 @@ img {
 }
 .client-background{
 		background-image: url('../images/bg5.png');
-		background-repeat: no-repeat;background-color:#F9F9F9;
+		background-repeat: no-repeat;
+    background-color:#F9F9F9;
+    background-position: right top ;
 	}
 /*/////////////////////////////////////////*/
 .shown{
