@@ -21,7 +21,7 @@
                     <div class="col-lg-12 ftco-animate">
                         <div class="text-right">
                             <p>
-                                <img src="{{ asset('uploads/blogs') }}/{{ $row->image }}" alt="{{ asset('uploads/blogs') }}/{{ $row->image }}" class="img-fluid h-400 w-100">
+                                <img src="{{ asset('public/public/uploads/blogs') }}/{{ $row->image }}" alt="{{ asset('public/public/uploads/blogs') }}/{{ $row->image }}" class="img-fluid h-400 w-100">
                             </p>
                             <h2 class="mb-3 clr-dark"><b>{{ $row->title }}</b></h2>
                             <p class="clr-gray">{!! $row->text !!}</p> </div>
@@ -59,7 +59,7 @@
                         @foreach ($others as $other)
                         <div class="col-md-6 col-lg-4 ftco-animate">
                             <div class="blog-entry box-shadow">
-                                <img src="{{ asset('uploads/blogs') }}/{{ $other->image }}" alt="{{ asset('uploads/blogs') }}/{{ $other->image }}" class="w-100" />
+                                <img src="{{ asset('public/public/uploads/blogs') }}/{{ $other->image }}" alt="{{ asset('public/public/uploads/blogs') }}/{{ $other->image }}" class="w-100" />
                                 <div class="text p-4">
                                     <h3 class="heading text-right"><a href="#" class="clr-dark">{{ $other->title }}</a></h3>
                                     <p class="text-right">{{Illuminate\Support\Str::limit(strip_tags($other->text ?? ''), $limit = 100, $end = '')}}</p>
@@ -87,7 +87,7 @@
                     <h2 class="clr-dark text-right pb-2">أخر المنتجات</h2>
                     @foreach ($products as $product)
                     <div class="blog-entry box-shadow">
-                        <img src="{{ asset('uploads/products') }}/{{ $product->image }}" alt="{{ asset('uploads/products') }}/{{ $product->image }}" class="w-100 h-180" />
+                        <img src="{{ asset('public/public/uploads/products') }}/{{ $product->image }}" alt="{{ asset('public/public/uploads/products') }}/{{ $product->image }}" class="w-100 h-180" />
                         <div class="text p-3">
                             <h3 class="heading text-right"><a href="#" class="clr-dark">{{$product->name}}</a></h3>
                         </div>
@@ -100,7 +100,7 @@
                     <h2 class="clr-dark text-right pb-2">أخر المقالات</h2>
                     @foreach ($latestPlogs as $latest)
                     <div class="block-21 mb-4 d-flex pl-2 box-shadow">
-                        <a class="blog-img" href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $latest->id . '/' . $latest->slug) }}" style="background-image: url('{{ asset('uploads/blogs') }}/{{ $latest->image }}');"></a>
+                        <a class="blog-img" href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $latest->id . '/' . $latest->slug) }}" style="background-image: url('{{ asset('public/public/uploads/blogs') }}/{{ $latest->image }}');"></a>
                         <div class="text">
                             <h3 class="heading pt-3 pr-3 text-right"><a href="#" class="clr-dark">{{ $latest->title }}</a></h3>
                             <div class="meta text-right mr-3">

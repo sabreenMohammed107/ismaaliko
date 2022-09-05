@@ -22,13 +22,13 @@
         @foreach ($attachments as $index=>$row)
         <tr>
             <td>{{ $index + 1 }}</td>
-            <td><img src="{{ asset('uploads/products')}}/{{$row->image}}" widtd="100" height="100" alt="">
+            <td><img src="{{ asset('public/uploads/products')}}/{{$row->image}}" widtd="100" height="100" alt="">
                </td>
 
             <td>
                 <div class="btn-group">
-                    <a  id="downloadCurrent" href="{{ asset('uploads/products')}}/{{$row->image}}" download="" class="btn btn-default"><i class="fa fa-download" title="download"></i>
-                    {{-- <input type="text" name="attach" value="{{ asset('uploads/attachment')}}/{{$row->name}}" alt="{{$row->name}}" /> --}}
+                    <a  id="downloadCurrent" href="{{ asset('public/uploads/products')}}/{{$row->image}}" download="" class="btn btn-default"><i class="fa fa-download" title="download"></i>
+                    {{-- <input type="text" name="attach" value="{{ asset('public/uploads/attachment')}}/{{$row->name}}" alt="{{$row->name}}" /> --}}
                 </a>
                 </div>
             </td>

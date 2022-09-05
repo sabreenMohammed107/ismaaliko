@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('webssets/images/bg_2.png')}}');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('public/webssets/images/bg_2.png')}}');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" dir="rtl">
@@ -33,7 +33,7 @@
                     <div class="col-lg-12 d-block text-right mb-3">
                         <h5 class="clr-dark mr-3 mb-4">يرجى الاتصال بنا في حال وجود شكاوي أو استفسارات</h5>
                         <div class="col-md d-flex topper align-items-center align-items-stretch">
-                            <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-location.png')}}" /></span></div>
+                            <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('public/webssets/images/icon-location.png')}}" /></span></div>
                             <div class="text">
                                 <span class="clr-blue">العنوان</span>
                                 <span class="clr-blue2"><b>الفرع الرئيسي :</b> {!!$contact->address !!}</span>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="col-lg-12 d-block text-right mb-3">
                         <div class="col-md d-flex topper align-items-center align-items-stretch">
-                            <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-phone.png')}}" /></span></div>
+                            <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('public/webssets/images/icon-phone.png')}}" /></span></div>
                             <div class="text">
                                 <span class="clr-blue">التليفون</span>
                                 <span class="clr-blue2">{!!$contact->phone !!}</span>
@@ -55,7 +55,7 @@
                     </div>
                     <div class="col-lg-12 d-block text-right mb-3">
                         <div class="col-md d-flex topper align-items-center align-items-stretch">
-                            <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-location.png')}}" /></span></div>
+                            <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('public/webssets/images/icon-location.png')}}" /></span></div>
                             <div class="text">
                                 <span class="clr-blue">البريد الالكترونى</span>
                                 <span class="clr-blue2">{!!$contact->email !!}</span>

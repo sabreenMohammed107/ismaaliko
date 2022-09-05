@@ -1,7 +1,7 @@
 @extends('web.layout.web')
 
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('webssets/images/bg_2.png')}}');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('public/webssets/images/bg_2.png')}}');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" dir="rtl">
@@ -44,10 +44,10 @@
         <div class="item">
             <div class="content">
             @if ($row->type == 1)
-            <a href="{{ asset('uploads/galleries')}}/{{ $row->image }}" class="gallery image-popup img d-flex align-items-center" >
+            <a href="{{ asset('public/public/uploads/galleries')}}/{{ $row->image }}" class="gallery image-popup img d-flex align-items-center" >
 
                 <div class="content-overlay"></div>
-                          <img class="content-image" src="{{ asset('uploads/galleries') }}/{{ $row->image }}" alt="{{ asset('uploads/galleries') }}/{{ $row->image }}">
+                          <img class="content-image" src="{{ asset('public/public/uploads/galleries') }}/{{ $row->image }}" alt="{{ asset('public/public/uploads/galleries') }}/{{ $row->image }}">
                           <div class="content-details fadeIn-bottom">
                               <h3 class="text-white mb-4">{{ $row->title }}</h3>
                               <p class="text-white">{{ $row->text }}</p>

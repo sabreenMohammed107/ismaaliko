@@ -3,7 +3,7 @@
     <div class="col-lg-12  mb-4">
         <div class="row box-shadow">
             <div class="col-lg-5 pro-right">
-                <img src="{{ asset('uploads/products') }}/{{ $product->image }}" alt="{{ asset('uploads/products') }}/{{ $product->image }}" class="img-fluid pro-img h-100 w-100">
+                <img src="{{ asset('public/uploads/products') }}/{{ $product->image }}" alt="{{ asset('public/uploads/products') }}/{{ $product->image }}" class="img-fluid pro-img h-100 w-100">
             </div>
             <div class="col-lg-7 pro-left">
                 <table class="table product-tbl">

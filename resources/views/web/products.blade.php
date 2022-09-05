@@ -21,9 +21,9 @@
                     <div class="col-lg-12 ftco-animate mb-4 bg-light p-3">
                         <div class="row">
                             <div class="col-lg-5">
-                                {{-- <div class="img img-video d-flex align-items-center h-200" style="background-image: url({{ asset('uploads/products_categories') }}/{{ $category->image }});">
+                                {{-- <div class="img img-video d-flex align-items-center h-200" style="background-image: url({{ asset('public/public/uploads/products_categories') }}/{{ $category->image }});">
                                     <div class="video justify-content-center">
-                                        <a href="{{ asset('uploads/products_categories') }}/{{ $category->vedio }}" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                                        <a href="{{ asset('public/public/uploads/products_categories') }}/{{ $category->vedio }}" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                                             <span class="ion-ios-play"></span>
                                         </a>
                                     </div>
@@ -74,7 +74,7 @@
                     <h2 class="clr-dark text-right pb-2">أخر المنتجات</h2>
                     @foreach ($products as $product)
                     <div class="blog-entry box-shadow">
-                        <img src="{{ asset('uploads/products') }}/{{ $product->image }}" alt="{{ asset('uploads/products') }}/{{ $product->image }}" class="w-100 h-180" />
+                        <img src="{{ asset('public/public/uploads/products') }}/{{ $product->image }}" alt="{{ asset('public/public/uploads/products') }}/{{ $product->image }}" class="w-100 h-180" />
                         <div class="text p-3">
                             <h3 class="heading text-right"><a href="#" class="clr-dark">{{$product->name}}</a></h3>
                         </div>
@@ -87,7 +87,7 @@
                     <h2 class="clr-dark text-right pb-2">أخر المقالات</h2>
                     @foreach ($latestPlogs as $latest)
                     <div class="block-21 mb-4 d-flex pl-2 box-shadow">
-                        <a class="blog-img" href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $latest->id . '/' . $latest->slug) }}" style="background-image: url('{{ asset('uploads/blogs') }}/{{ $latest->image }}');"></a>
+                        <a class="blog-img" href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $latest->id . '/' . $latest->slug) }}" style="background-image: url('{{ asset('public/public/uploads/blogs') }}/{{ $latest->image }}');"></a>
                         <div class="text">
                             <h3 class="heading pt-3  pr-3 text-right"><a href="#" class="clr-dark">{{ $latest->title }}</a></h3>
                             <div class="meta text-right mr-3">
@@ -113,7 +113,7 @@
             <div class="col-md-8 text-center heading-section ftco-animate fadeInUp ftco-animated">
                 <div class="row">
                     <div class="col-lg-5">
-                        <img src="{{ asset('uploads/accessories') }}/{{ $accessory->image ?? '' }}" alt="{{ asset('uploads/accessories') }}/{{ $accessory->image ?? ''}}" class="img-fluid pro-img h-200 w-100">
+                        <img src="{{ asset('public/public/uploads/accessories') }}/{{ $accessory->image ?? '' }}" alt="{{ asset('public/public/uploads/accessories') }}/{{ $accessory->image ?? ''}}" class="img-fluid pro-img h-200 w-100">
                     </div>
                     <div class="col-lg-7">
                         <div class="p-3">
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <img src="{{ asset('uploads/glasses') }}/{{ $glass->image ?? '' }}" alt="{{ asset('uploads/glasses') }}/{{ $glass->image ?? '' }}" class="img-fluid pro-img h-200 w-100">
+                        <img src="{{ asset('public/public/uploads/glasses') }}/{{ $glass->image ?? '' }}" alt="{{ asset('public/public/uploads/glasses') }}/{{ $glass->image ?? '' }}" class="img-fluid pro-img h-200 w-100">
                     </div>
                 </div>
             </div>

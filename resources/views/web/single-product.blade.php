@@ -1,7 +1,7 @@
 @extends('web.layout.web')
 
 @section('content')
-<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('webssets/images/bg_2.png')}}');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('public/webssets/images/bg_2.png')}}');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" dir="rtl">
@@ -23,7 +23,7 @@
                             <!-- Flickity HTML init -->
                             <div class="carousel carousel-main" data-flickity='{"pageDots": false }'>
                                @foreach ($row->images as $img)
-                               <div class="carousel-cell w-100"><img src="{{ asset('uploads/products') }}/{{ $img->image }}" alt="{{ asset('uploads/products') }}/{{ $img->image }}" class="w-100"/></div>
+                               <div class="carousel-cell w-100"><img src="{{ asset('public/public/uploads/products') }}/{{ $img->image }}" alt="{{ asset('public/public/uploads/products') }}/{{ $img->image }}" class="w-100"/></div>
                                @endforeach
 
 
@@ -31,7 +31,7 @@
 
                             <div class="carousel carousel-nav" data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false }'>
                                 @foreach ($row->images as $img)
-                                <div class="carousel-cell"><img src="{{ asset('uploads/products') }}/{{ $img->image }}" /></div>
+                                <div class="carousel-cell"><img src="{{ asset('public/public/uploads/products') }}/{{ $img->image }}" /></div>
                                 @endforeach
 
                             </div>
@@ -65,7 +65,7 @@
                             </div>
                             <div class="col-lg-7 p-3">
                                 <p class="clr-gray text-right">
-                                    <img src="{{ asset('uploads/products') }}/{{ $row->image_catalog }}" alt="{{ asset('uploads/products') }}/{{ $row->image_catalog }}" class="img-fluid pro-img w-100">
+                                    <img src="{{ asset('public/public/uploads/products') }}/{{ $row->image_catalog }}" alt="{{ asset('public/public/uploads/products') }}/{{ $row->image_catalog }}" class="img-fluid pro-img w-100">
                                 </p>
                             </div>
                         </div>
@@ -73,9 +73,9 @@
                     <div class="col-lg-12 ftco-animate mb-4 bg-light p-3">
                         <div class="row">
                             <div class="col-lg-5">
-                                <div class="img img-video d-flex align-items-center h-200" style="background-image: url({{ asset('uploads/products') }}/{{ $row->image }});">
+                                <div class="img img-video d-flex align-items-center h-200" style="background-image: url({{ asset('public/public/uploads/products') }}/{{ $row->image }});">
                                     <div class="video justify-content-center">
-                                        <a href="{{ asset('uploads/products') }}/{{ $row->vedio }}" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+                                        <a href="{{ asset('public/public/uploads/products') }}/{{ $row->vedio }}" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
                                             <span class="ion-ios-play"></span>
                                         </a>
                                     </div>
@@ -108,19 +108,19 @@
                         <a href="blog-single.html" class="block-20 d-flex align-items-center box-shadow">
                             <div class="d-flex align-items-center justify-content-center w-100">
                                 @isset($why_us[0])
-                               <img src="{{ asset('webssets/images/icon-1.png')}}" alt="icon-1.png" class="hw-100"/>
+                               <img src="{{ asset('public/webssets/images/icon-1.png')}}" alt="icon-1.png" class="hw-100"/>
 
                                @endisset
                                @isset($why_us[1])
-                               <img src="{{ asset('webssets/images/icon-2.png')}}" alt="icon-5.png" class="hw-100"/>
+                               <img src="{{ asset('public/webssets/images/icon-2.png')}}" alt="icon-5.png" class="hw-100"/>
 
                                @endisset
                                @isset($why_us[2])
-                               <img src="{{ asset('webssets/images/icon-5.png')}}" alt="icon-5.png" class="hw-100"/>
+                               <img src="{{ asset('public/webssets/images/icon-5.png')}}" alt="icon-5.png" class="hw-100"/>
 
                                @endisset
                                @isset($why_us[3])
-                               <img src="{{ asset('webssets/images/icon-6.png')}}" alt="icon-6.png" class="hw-100"/>
+                               <img src="{{ asset('public/webssets/images/icon-6.png')}}" alt="icon-6.png" class="hw-100"/>
 
                                @endisset
 
@@ -209,7 +209,7 @@
                 <h2 class="clr-dark text-right pb-2">أخر المنتجات</h2>
                 @foreach ($products as $product)
                 <div class="blog-entry box-shadow">
-                    <img src="{{ asset('uploads/products') }}/{{ $product->image }}" alt="{{ asset('uploads/products') }}/{{ $product->image }}" class="w-100 h-180" />
+                    <img src="{{ asset('public/public/uploads/products') }}/{{ $product->image }}" alt="{{ asset('public/public/uploads/products') }}/{{ $product->image }}" class="w-100 h-180" />
                     <div class="text p-3">
                         <h3 class="heading text-right"><a href="#" class="clr-dark">{{$product->name}}</a></h3>
                     </div>
@@ -222,7 +222,7 @@
                 <h2 class="clr-dark text-right pb-2">أخر المقالات</h2>
                 @foreach ($latestPlogs as $latest)
                 <div class="block-21 mb-4 d-flex pl-2 box-shadow">
-                    <a class="blog-img" href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $latest->id . '/' . $latest->slug) }}" style="background-image: url('{{ asset('uploads/blogs') }}/{{ $latest->image }}');"></a>
+                    <a class="blog-img" href="{{ LaravelLocalization::localizeUrl('/single-blog/' . $latest->id . '/' . $latest->slug) }}" style="background-image: url('{{ asset('public/public/uploads/blogs') }}/{{ $latest->image }}');"></a>
                     <div class="text">
                         <h3 class="heading pt-3"><a href="#" class="clr-dark">{{ $latest->title }}</a></h3>
                         <div class="meta text-right mr-3">

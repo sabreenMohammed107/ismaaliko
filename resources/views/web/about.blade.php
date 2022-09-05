@@ -1,7 +1,7 @@
 @extends('web.layout.web')
 
 @section('content')
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('webssets/images/bg_2.png') }}');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('{{ asset('public/webssets/images/bg_2.png') }}');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text align-items-center justify-content-center" dir="rtl">
@@ -18,7 +18,7 @@
         <div class="container">
             <div class="row d-flex" dir="rtl">
                 <div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-                    <div class="img"> <img src="{{ asset('webssets/images/about.png') }}" alt="about" /> </div>
+                    <div class="img"> <img src="{{ asset('public/webssets/images/about.png') }}" alt="about" /> </div>
                 </div>
                 <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
                     <h4 class="mb-4 text-right clr-blue">اسماعيلكو</h4>
@@ -33,8 +33,8 @@
     <section class="ftco-section">
         <div class="container">
             <div class="row d-flex pb-5" dir="rtl">
-                <div class="col-lg-6 col-md-6 col-sm-12" style="background-image: url('{{ asset('webssets/images/view.png') }}');height: 300px;background-repeat: no-repeat;background-size: cover;">
-                    {{-- <div class="img"> <img src="{{ asset('webssets/images/view.png') }}" alt="mission" class="about-img"  /> </div> --}}
+                <div class="col-lg-6 col-md-6 col-sm-12" style="background-image: url('{{ asset('public/webssets/images/view.png') }}');height: 300px;background-repeat: no-repeat;background-size: cover;">
+                    {{-- <div class="img"> <img src="{{ asset('public/webssets/images/view.png') }}" alt="mission" class="about-img"  /> </div> --}}
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 wrap-about ftco-animate">
                     <h2 class="mb-4 mt-3 text-right clr-dark">مهمتنا</h2>
@@ -48,8 +48,8 @@
                     <p class="mb-4 text-right clr-gray">
                         {!! $company->vision !!} </p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12" style="background-image: url('{{ asset('webssets/images/vision.png') }}');height: 300px;background-repeat: no-repeat;background-size: cover;">
-                    {{-- <div class="img"> <img src="{{ asset('webssets/images/vision.png') }}" alt="vission" class="about-img"  /> --}}
+                <div class="col-lg-6 col-md-6 col-sm-12" style="background-image: url('{{ asset('public/webssets/images/vision.png') }}');height: 300px;background-repeat: no-repeat;background-size: cover;">
+                    {{-- <div class="img"> <img src="{{ asset('public/webssets/images/vision.png') }}" alt="vission" class="about-img"  /> --}}
                     </div>
                 </div>
             </div>
@@ -75,19 +75,19 @@
                             <a href="blog-single.html" class="block-20 d-flex align-items-center box-shadow">
                                 <div class="d-flex align-items-center justify-content-center w-100">
                                     @isset($why_us[0])
-                                    <img src="{{ asset('webssets/images/icon-1.png')}}" alt="icon-1.png" class="hw-100"/>
+                                    <img src="{{ asset('public/webssets/images/icon-1.png')}}" alt="icon-1.png" class="hw-100"/>
 
                                     @endisset
                                     @isset($why_us[1])
-                                    <img src="{{ asset('webssets/images/icon-2.png')}}" alt="icon-5.png" class="hw-100"/>
+                                    <img src="{{ asset('public/webssets/images/icon-2.png')}}" alt="icon-5.png" class="hw-100"/>
 
                                     @endisset
                                     @isset($why_us[2])
-                                    <img src="{{ asset('webssets/images/icon-5.png')}}" alt="icon-5.png" class="hw-100"/>
+                                    <img src="{{ asset('public/webssets/images/icon-5.png')}}" alt="icon-5.png" class="hw-100"/>
 
                                     @endisset
                                     @isset($why_us[3])
-                                    <img src="{{ asset('webssets/images/icon-6.png')}}" alt="icon-6.png" class="hw-100"/>
+                                    <img src="{{ asset('public/webssets/images/icon-6.png')}}" alt="icon-6.png" class="hw-100"/>
 
                                     @endisset
 
@@ -128,9 +128,9 @@
                         <div class="client-item">
                             <div class="row justify-content-center">
                                 @if($row->image)
-                                <img src="{{ asset('uploads/feedback') }}/{{ $row->image }}" alt="{{ asset('uploads/feedback') }}/{{ $row->image }}" class="clients-img">
+                                <img src="{{ asset('public/public/uploads/feedback') }}/{{ $row->image }}" alt="{{ asset('public/public/uploads/feedback') }}/{{ $row->image }}" class="clients-img">
                            @else
-                           <img src="{{ asset('webssets/images/stuff.png')}}" class="clients-img">
+                           <img src="{{ asset('public/webssets/images/stuff.png')}}" class="clients-img">
   @endif
                             </div>
                             <div class="text text-center client-text">
@@ -168,9 +168,9 @@
                     <div class="staff">
                         <div class="img-wrap d-flex align-items-stretch">
                             @if($row->image)
-                            <div class="img align-self-stretch" style="background-image: url({{ asset('uploads/teams') }}/{{ $row->image }});"></div>
+                            <div class="img align-self-stretch" style="background-image: url({{ asset('public/public/uploads/teams') }}/{{ $row->image }});"></div>
                        @else
-                       <div class="img align-self-stretch" style="background-image: url({{ asset('webssets/images/stuff.png')}});"></div>
+                       <div class="img align-self-stretch" style="background-image: url({{ asset('public/webssets/images/stuff.png')}});"></div>
 
                        @endif
                         </div>
@@ -206,7 +206,7 @@
             <div class="container pb-5">
                 <section class="customer-logos slider">
                     @foreach ($clients as $index => $row)
-                    <div class="slide"><img src="{{ asset('uploads/clients') }}/{{ $row->logo }}"></div>
+                    <div class="slide"><img src="{{ asset('public/public/uploads/clients') }}/{{ $row->logo }}"></div>
                     @endforeach
 
                 </section>
@@ -216,7 +216,7 @@
 
 @endsection
 @section('scripts')
-{{-- <script src="{{ asset('webssets/js/main-menu.js')}}"></script> --}}
+{{-- <script src="{{ asset('public/webssets/js/main-menu.js')}}"></script> --}}
 
 <script>
     $('.carousel-main1').owlCarousel({

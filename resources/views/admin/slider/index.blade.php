@@ -32,7 +32,7 @@
 							<tr>
                                 <td></td>
                                 <td>{{ $index + 1 }}</td>
-                                <td><img src="{{ asset('uploads/home_sliders') }}/{{ $row->image }}" width="100" height="100"> </td>
+                                <td><img src="{{ asset('public/uploads/home_sliders') }}/{{ $row->image }}" width="100" height="100"> </td>
 
                                 <td>{{$row->title}}</td>
                                 <td>{{$row->sub_title}}</td>

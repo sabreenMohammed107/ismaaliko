@@ -4,19 +4,19 @@
             <div class="container">
                 <div class="row no-gutters d-flex align-items-center align-items-stretch pt-3" dir="rtl">
                     <div class="col-md-6 d-flex align-items-center">
-                        <a class="navbar-brand" href="{{ LaravelLocalization::localizeUrl('/') }}"><img src="{{ asset('webssets/images/logo.png')}}" alt="logo" /></a>
+                        <a class="navbar-brand" href="{{ LaravelLocalization::localizeUrl('/') }}"><img src="{{ asset('public/webssets/images/logo.png')}}" alt="logo" /></a>
                     </div>
                     <div class="col-lg-6 d-block text-right">
                         <div class="row d-flex">
                             <div class="col-md d-flex topper align-items-center align-items-stretch">
-                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-location.png')}}"  alt="address"/></span></div>
+                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('public/webssets/images/icon-location.png')}}"  alt="address"/></span></div>
                                 <div class="text">
                                     <span>العنوان</span>
                                     <span>{!! $contact->address !!}</span>
                                 </div>
                             </div>
                             <div class="col-md d-flex topper align-items-center align-items-stretch">
-                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-phone.png')}}" alt="phone" /></span></div>
+                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('public/webssets/images/icon-phone.png')}}" alt="phone" /></span></div>
                                 <div class="text">
                                     <span>التليفون</span>
                                     <span>{!! $contact->phone!!}</span>
@@ -31,10 +31,10 @@
             <div class="container">
                 <div class="row no-gutters d-flex align-items-center align-items-stretch pt-3" dir="rtl">
                     <div class="col-md-6 d-flex align-items-center">
-                        <a class="navbar-brand" href="{{ LaravelLocalization::localizeUrl('/') }}"><img src="{{ asset('webssets/images/logo.png')}}" alt="logo" /></a>
+                        <a class="navbar-brand" href="{{ LaravelLocalization::localizeUrl('/') }}"><img src="{{ asset('public/webssets/images/logo.png')}}" alt="logo" /></a>
                       <div class="text-right pr-5 shown">
                           <div class="col-md d-flex topper">
-                              <div class="icon d-flex justify-content-end align-items-end"><span><img src="{{ asset('webssets/images/icon-phone.png')}}" alt="phone" /></span></div>
+                              <div class="icon d-flex justify-content-end align-items-end"><span><img src="{{ asset('public/webssets/images/icon-phone.png')}}" alt="phone" /></span></div>
                               <div class="text">
                                   <span>التليفون</span>
                                   <span>{!! $contact->phone!!}</span>
@@ -45,14 +45,14 @@
                     <div class="col-lg-6 d-block text-right">
                         <div class="row d-flex">
                             <div class="col-md d-flex topper align-items-center align-items-stretch">
-                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-location.png')}}"  alt="address" class="hide"  /></span></div>
+                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('public/webssets/images/icon-location.png')}}"  alt="address" class="hide"  /></span></div>
                                 <div class="text hide">
                                     <span>العنوان</span>
                                     <span>{!! $contact->address !!}</span>
                                 </div>
                             </div>
                             <div class="col-md d-flex topper align-items-center align-items-stretch">
-                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('webssets/images/icon-phone.png')}}" alt="phone" class="hide"  /></span></div>
+                                <div class="icon d-flex justify-content-center align-items-center"><span><img src="{{ asset('public/webssets/images/icon-phone.png')}}" alt="phone" class="hide"  /></span></div>
                                 <div class="text hide">
                                     <span>التليفون</span>
                                     <span>{!! $contact->phone!!}</span>
@@ -104,7 +104,7 @@
                                   </div>
                                   <div class="row">
                                       <div class="col-md-12 w-100">
-                                          <img src="{{ asset('webssets/images/menu.png')}}" class="w-100" />
+                                          <img src="{{ asset('public/webssets/images/menu.png')}}" class="w-100" />
                                       </div>
                                   </div>
                               </div>

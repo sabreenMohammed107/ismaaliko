@@ -31,7 +31,7 @@
                                 <td></td>
                                 <td>{{ $index + 1 }}</td>
                                 <td>{{$row->name}}</td>
-                                <td><img src="{{ asset('uploads/products_categories') }}/{{ $row->image }}" width="100" height="100"> </td>
+                                <td><img src="{{ asset('public/uploads/products_categories') }}/{{ $row->image }}" width="100" height="100"> </td>
 
                                 <td>{!! $row->overview !!} </td>
 

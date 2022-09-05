@@ -14,7 +14,7 @@
             <div class="carousel-inner" role="listbox">
                 @foreach ($homeSliders as $index => $slide)
                     <div class="carousel-item {{ $index == 0 ? 'active' : '' }}"
-                        style="background-image: url({{ asset('uploads/home_sliders') }}/{{ $slide->image }});">
+                        style="background-image: url({{ asset('public/public/uploads/home_sliders') }}/{{ $slide->image }});">
                         <div class="overlay"></div>
                         <div class="container" dir="rtl">
                             <div class="row  pt-5 slider-text align-items-center justify-content-start"
@@ -55,7 +55,7 @@
         <div class="container">
             <div class="row d-flex" dir="rtl">
                 <div class="col-md-5 order-md-last wrap-about wrap-about d-flex align-items-stretch">
-                    <div class="img"> <img src="{{ asset('webssets/images/about.png')}}" alt="about" /> </div>
+                    <div class="img"> <img src="{{ asset('public/webssets/images/about.png')}}" alt="about" /> </div>
                 </div>
                 <div class="col-md-7 wrap-about py-5 pr-md-4 ftco-animate">
                     <h4 class="mb-4 text-right clr-blue">اسماعيلكو</h4>
@@ -86,7 +86,7 @@
                 @foreach ($services as $index => $service)
                 <div class="col-md-6 col-lg-4 ftco-animate">
                     <div class="blog-entry box-shadow">
-                        <img src="{{ asset('uploads/products_categories') }}/{{ $service->image }}" alt="{{ asset('uploads/products_categories') }}/{{ $service->image }}" class="w-100" />
+                        <img src="{{ asset('public/public/uploads/products_categories') }}/{{ $service->image }}" alt="{{ asset('public/public/uploads/products_categories') }}/{{ $service->image }}" class="w-100" />
                         <div class="text bg-dark3 p-4">
                             <h3 class="heading text-right"><a href="#" class="text-white">{{$service->name}}</a></h3>
                             <p class="text-right text-white">                       {{Illuminate\Support\Str::limit(strip_tags($service->overview ?? ''), $limit = 100, $end = '...')}}
@@ -124,19 +124,19 @@
                         <a href="blog-single.html" class="block-20 d-flex align-items-center box-shadow">
                             <div class="d-flex align-items-center justify-content-center w-100">
                                @isset($why_us[0])
-                               <img src="{{ asset('webssets/images/icon-1.png')}}" alt="icon-1.png" class="hw-100"/>
+                               <img src="{{ asset('public/webssets/images/icon-1.png')}}" alt="icon-1.png" class="hw-100"/>
 
                                @endisset
                                @isset($why_us[1])
-                               <img src="{{ asset('webssets/images/icon-2.png')}}" alt="icon-5.png" class="hw-100"/>
+                               <img src="{{ asset('public/webssets/images/icon-2.png')}}" alt="icon-5.png" class="hw-100"/>
 
                                @endisset
                                @isset($why_us[2])
-                               <img src="{{ asset('webssets/images/icon-5.png')}}" alt="icon-5.png" class="hw-100"/>
+                               <img src="{{ asset('public/webssets/images/icon-5.png')}}" alt="icon-5.png" class="hw-100"/>
 
                                @endisset
                                @isset($why_us[3])
-                               <img src="{{ asset('webssets/images/icon-6.png')}}" alt="icon-6.png" class="hw-100"/>
+                               <img src="{{ asset('public/webssets/images/icon-6.png')}}" alt="icon-6.png" class="hw-100"/>
 
                                @endisset
 
@@ -183,7 +183,7 @@
 
                         <div class="item product filter sale{{ $row->cat->id ?? ''}} all">
                             <div class="testimony-wrap d-flex">
-                                <img src="{{ asset('uploads/galleries') }}/{{ $row->image }}" alt="{{ asset('uploads/galleries') }}/{{ $row->image }}" />
+                                <img src="{{ asset('public/public/uploads/galleries') }}/{{ $row->image }}" alt="{{ asset('public/public/uploads/galleries') }}/{{ $row->image }}" />
                             </div>
                             <div class="text-box">
 
@@ -229,7 +229,7 @@
 
                 <div class="col-md-6 col-lg-4 ftco-animate">
                     <div class="blog-entry box-shadow">
-                        <img src="{{ asset('uploads/blogs') }}/{{ $blog->image }}" alt="{{ asset('uploads/blogs') }}/{{ $blog->image }}" class="w-100" />
+                        <img src="{{ asset('public/public/uploads/blogs') }}/{{ $blog->image }}" alt="{{ asset('public/public/uploads/blogs') }}/{{ $blog->image }}" class="w-100" />
                         <div class="text p-4">
                             <h3 class="heading text-right"><a href="#" class="clr-dark">{{ $blog->title }} </a></h3>
                             <p class="text-right"> {{Illuminate\Support\Str::limit(strip_tags($blog->text ?? ''), $limit = 100, $end = '...')}}</p>

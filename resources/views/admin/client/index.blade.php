@@ -32,7 +32,7 @@
                                 <td>{{ $index + 1 }}</td>
                                 <td>{{$row->name}}</td>
 
-                                <td><img src="{{ asset('uploads/clients') }}/{{ $row->logo }}" width="100" height="100"> </td>
+                                <td><img src="{{ asset('public/uploads/clients') }}/{{ $row->logo }}" width="100" height="100"> </td>
 
 
 

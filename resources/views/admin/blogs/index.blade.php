@@ -32,7 +32,7 @@
 							<tr>
                                 <td></td>
                                 <td>{{ $index + 1 }}</td>
-                                <td><img src="{{ asset('uploads/blogs') }}/{{ $row->image }}" width="100" height="100"> </td>
+                                <td><img src="{{ asset('public/uploads/blogs') }}/{{ $row->image }}" width="100" height="100"> </td>
 
                                 <td>{{$row->title}}</td>
                                 <td>{{date('d-m-Y', strtotime($row->blog_date))}}</td>
